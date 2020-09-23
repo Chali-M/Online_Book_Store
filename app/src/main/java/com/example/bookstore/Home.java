@@ -40,6 +40,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                // this is test comment
 
                 DBHandler dbHandler = new DBHandler(getApplicationContext());
                 if(dbHandler.loginUser(username.getText().toString(),password.getText().toString())){
