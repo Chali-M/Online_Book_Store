@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BookStOrE"></activity>
+        <activity android:name=".Sell_Book"></activity>
+        <activity android:name=".AboutUs" />
+        <activity android:name=".BookStOrE" />
         <activity android:name=".EditProfile" />
         <activity android:name=".ProfileManagement" />
         <activity android:name=".Home">
