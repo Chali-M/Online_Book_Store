@@ -5,71 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/abc8"
     tools:context=".Home">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/home"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#3fff">
 
-    <EditText
-        android:id="@+id/etUserName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/username"
-        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/etPasswordH"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword" />
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="BookStoRe"
+            android:textColor="#EFF8E7"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+
+            android:hint="@string/username"
+            android:textColorHint="#FFFFFF"
+            android:paddingLeft="15dp"
+            android:background="@drawable/btn"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPasswordH"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textColorHint="#FFFFFF"
+            android:hint="@string/password"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:inputType="textPassword" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="#3fff"
+
+            android:layout_marginTop="35dp"/>
+
+
 
     <Button
+        android:paddingLeft="15dp"
+        android:layout_marginTop="25dp"
         android:id="@+id/btnlogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:layout_margin="10dp"
+        android:background="@drawable/btncolor"
+
         android:text="@string/login" />
 
     <Button
         android:id="@+id/btnregister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/btncolor"
         android:text="@string/register" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="448dp"
-        android:background="#F5F5F5"
-        android:padding="10dp"
-        android:paddingStart="10dp">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="278dp"
-            android:layout_height="178dp"
-            android:layout_marginStart="11dp"
-            android:layout_marginEnd="4dp"
-            android:background="#F5F5F5"
-            android:padding="10dp"
-            android:paddingStart="10dp"
-            android:paddingLeft="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.46"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.473"
-            app:srcCompat="@drawable/logo" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </LinearLayout>

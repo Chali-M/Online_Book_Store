@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/abc4"
     tools:context=".EditProfile">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/editprofile"
+        android:textColor="#35D1BF"
         android:textAlignment="center"
         android:textSize="36sp"
         android:textStyle="bold" />
@@ -21,55 +23,86 @@
         android:id="@+id/usernameep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/text1"
         android:ems="10"
         android:hint="@string/username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btncolor"
         android:id="@+id/btnsearchep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/search" />
 
     <EditText
+
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/text1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/dateofbirth" />
+        android:paddingLeft="15dp"
+        android:text="@string/dateofbirth"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D12F2F" />
 
     <EditText
         android:id="@+id/addressep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/text1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/address" />
+        android:paddingLeft="15dp"
+        android:text="@string/address"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/phoneep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/text1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/phonenumber" />
+        android:paddingLeft="15dp"
+        android:text="@string/phonenumber"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/passwordep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/text1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/password" />
+        android:paddingLeft="15dp"
+        android:text="@string/password"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/text1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/email" />
+        android:paddingLeft="15dp"
+        android:text="@string/email"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -95,6 +128,7 @@
 
         <Button
             android:id="@+id/buteditep"
+            android:background="@drawable/btncolor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/edit" />
@@ -103,6 +137,8 @@
 
     <Button
         android:id="@+id/btndeleteep"
+        android:background="@drawable/btncolor"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/delete" />

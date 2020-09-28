@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
-    android:background="#A6EFE6E6"
+    android:background="@drawable/abc3"
     android:fitsSystemWindows="false"
     android:orientation="vertical"
     tools:context=".BookStOrE">
 
     <TextView
         android:id="@+id/textView8"
+        android:textColor="#35D1BF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BookStOrE"
@@ -124,21 +125,22 @@
     <Button
         android:id="@+id/button"
         android:layout_width="402dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_margin="3dp"
         android:layout_marginLeft="5dp"
-        android:background="#5719EF"
+        android:background="@drawable/btncolor"
         android:text="buy"
         android:textColor="#F5F5F5"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/button2"
+        android:background="@drawable/btncolor"
         android:layout_width="402dp"
-        android:layout_height="46dp"
+        android:layout_height="40dp"
         android:layout_margin="3dp"
         android:layout_marginLeft="10dp"
-        android:background="#5719EF"
+
         android:text="Read"
         android:textColor="#FFFFFF"
         android:textSize="24sp" />

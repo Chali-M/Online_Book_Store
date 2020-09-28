@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/abc5"
     tools:context=".ProfileManagement">
 
     <TextView
@@ -13,11 +14,15 @@
         android:layout_height="wrap_content"
         android:text="@string/profile_management"
         android:textAlignment="center"
+        android:textColor="#22374C"
         android:textSize="36sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/namepm"
+        android:textColorHint="#FFFFFF"
+        android:paddingLeft="15dp"
+        android:background="@drawable/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -25,6 +30,10 @@
         android:inputType="textPersonName" />
 
     <EditText
+        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/text1"
         android:id="@+id/datepm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,6 +42,10 @@
         android:inputType="date" />
 
     <EditText
+        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/text1"
         android:id="@+id/addresspm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +54,10 @@
         android:inputType="textPersonName" />
 
     <EditText
+        android:textColorHint="#FFFFFF"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/text1"
         android:id="@+id/Phonepm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,6 +66,10 @@
         android:inputType="phone" />
 
     <EditText
+        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/text1"
         android:id="@+id/passwordpm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,6 +78,10 @@
         android:inputType="textPassword" />
 
     <EditText
+        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/text1"
         android:id="@+id/emailpm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,11 +115,14 @@
 
     <Button
         android:id="@+id/addpm"
+        android:background="@drawable/btncolor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add" />
 
     <Button
+        android:background="@drawable/btncolor"
+        android:layout_marginTop="15dp"
         android:id="@+id/updatepm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
