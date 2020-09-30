@@ -134,7 +134,7 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn222"
         android:background="@drawable/btncolor"
         android:layout_width="402dp"
         android:layout_height="40dp"
