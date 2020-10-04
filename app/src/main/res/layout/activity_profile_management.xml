@@ -21,7 +21,8 @@
     <EditText
         android:id="@+id/namepm"
         android:textColorHint="#FFFFFF"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:background="@drawable/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,7 +33,8 @@
     <EditText
         android:textColorHint="#FFFFFF"
         android:layout_marginTop="3dp"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:background="@drawable/text1"
         android:id="@+id/datepm"
         android:layout_width="match_parent"
@@ -44,7 +46,8 @@
     <EditText
         android:textColorHint="#FFFFFF"
         android:layout_marginTop="3dp"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:background="@drawable/text1"
         android:id="@+id/addresspm"
         android:layout_width="match_parent"
@@ -55,7 +58,8 @@
 
     <EditText
         android:textColorHint="#FFFFFF"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:layout_marginTop="3dp"
         android:background="@drawable/text1"
         android:id="@+id/Phonepm"
@@ -68,7 +72,8 @@
     <EditText
         android:textColorHint="#FFFFFF"
         android:layout_marginTop="3dp"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:background="@drawable/text1"
         android:id="@+id/passwordpm"
         android:layout_width="match_parent"
@@ -80,14 +85,15 @@
     <EditText
         android:textColorHint="#FFFFFF"
         android:layout_marginTop="3dp"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:background="@drawable/text1"
         android:id="@+id/emailpm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/email"
-        android:inputType="textPersonName" />
+        android:inputType="textEmailAddress" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -103,6 +109,7 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
             android:checked="true"
             android:text="@string/user" />
 
@@ -110,6 +117,7 @@
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
             android:text="@string/author" />
     </RadioGroup>
 
