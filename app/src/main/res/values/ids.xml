@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="authorEt" type="id" />
+    <item name="txty" type="id" />
+    <item name="bookEt" type="id" />
+    <item name="publisherEt" type="id" />
+    <item name="priceEt" type="id" />
+    <item name="emailEt" type="id" />
+    <item name="languageEt" type="id" />
+    <item name="confirmBtn" type="id" />
+</resources>
