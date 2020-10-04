@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abc3"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    tools:context=".BookStOrE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView8"
+            android:textColor="#35D1BF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bookstore"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:background="#2FB39292"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="86dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:fontFamily="cursive"
+                android:text="@string/buy"
+                android:textColor="#F5F5F5"
+                android:textColorHighlight="#C12E2E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.533" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/read1"
+            android:textColor="#3C9E8F"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/sell"
+            android:textAlignment="textEnd"
+            android:textColor="#251EE9"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="151dp"
+                android:layout_margin="3dp"
+                android:background="#D30A0B0B"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/book2" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/book3" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/book4" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/book5" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/inventory_button_home"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/btncolor"
+            android:text="@string/inventory"
+            android:textColor="#F5F5F5"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/read_button_home"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_margin="3dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btncolor"
+            android:text="@string/read"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:itemBackground="@color/colorPrimary"
+        android:layout_marginTop="50dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+
+</LinearLayout>

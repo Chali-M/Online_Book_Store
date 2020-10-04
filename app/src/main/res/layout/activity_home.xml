@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/abc8"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#3fff">
+
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/bookstore_logo_text"
+            android:textColor="#EFF8E7"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="@string/email"
+            android:textColorHint="#FFFFFF"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/btn"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPasswordH"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textColorHint="#FFFFFF"
+            android:hint="@string/password"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:inputType="textPassword" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="#3fff"
+
+            android:layout_marginTop="35dp"/>
+
+
+
+    <Button
+        android:paddingLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btnlogin"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btncolor"
+
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/btncolor"
+        android:text="@string/register" />
+
+    </LinearLayout>
+
+</LinearLayout>

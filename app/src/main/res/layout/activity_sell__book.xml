@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical"
+    tools:context=".Sell_Book">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="50dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/you_can_sell_your_own_books_in_our_app_with_an_interesting_payment"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/author_details"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/authorEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="@string/author"
+            android:inputType="textPersonName"
+
+            android:textColorHint="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@color/colorBlack"
+
+            />
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/contact"
+            android:inputType="phone"
+            android:textColorHint="@color/colorBlack"
+
+            />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorBlack" />
+
+
+        <TextView
+            android:id="@+id/txty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/book_details"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bookEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/book_name"
+            android:textColorHint="@color/colorBlack"
+
+            />
+
+        <EditText
+            android:id="@+id/publisherEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/publisher"
+            android:textColorHint="@color/colorBlack"
+
+            />
+
+        <EditText
+            android:id="@+id/typeEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/book_type"
+            android:textColorHint="@color/colorBlack" />
+
+
+        <EditText
+            android:id="@+id/priceEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/unit_price"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/languageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/book_language"
+            android:textColorHint="@color/colorBlack" />
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btncolor"
+            android:text="@string/next"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+
+</LinearLayout>
+
