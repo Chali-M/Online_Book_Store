@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/btneditep"
     android:layout_width="match_parent"
@@ -27,7 +26,8 @@
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF" />
 
@@ -47,10 +47,11 @@
         android:background="@drawable/text1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:paddingLeft="15dp"
-        android:text="@string/dateofbirth"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="@string/dateofbirth"
         android:textColor="#FFFFFF"
-        android:textColorHint="#D12F2F" />
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/addressep"
@@ -60,8 +61,9 @@
         android:background="@drawable/text1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:paddingLeft="15dp"
-        android:text="@string/address"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="@string/address"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF" />
 
@@ -72,9 +74,10 @@
         android:layout_marginTop="3dp"
         android:background="@drawable/text1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="15dp"
-        android:text="@string/phonenumber"
+        android:inputType="phone"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="@string/phonenumber"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF" />
 
@@ -85,9 +88,10 @@
         android:layout_marginTop="3dp"
         android:background="@drawable/text1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="15dp"
-        android:text="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="@string/password"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF" />
 
@@ -98,9 +102,10 @@
         android:layout_marginTop="3dp"
         android:background="@drawable/text1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="15dp"
-        android:text="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="@string/email"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF" />
 
@@ -117,12 +122,14 @@
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
+            android:textColor="@android:color/white"
             android:layout_height="wrap_content"
             android:text="@string/user" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
+            android:textColor="@android:color/white"
             android:layout_height="wrap_content"
             android:text="@string/author" />
 

@@ -24,7 +24,7 @@
             android:background="@drawable/circle"
             android:fontFamily="cursive"
             android:gravity="center"
-            android:text="BookStoRe"
+            android:text="@string/bookstore_logo_text"
             android:textColor="#EFF8E7"
             android:textSize="30sp" />
 
@@ -32,12 +32,12 @@
             android:id="@+id/etUserName"
             android:layout_width="250dp"
             android:layout_height="40dp"
-
-            android:hint="@string/username"
+            android:hint="@string/email"
             android:textColorHint="#FFFFFF"
-            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:background="@drawable/btn"
-            android:inputType="textPersonName" />
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/etPasswordH"
@@ -45,7 +45,8 @@
             android:layout_height="40dp"
             android:textColorHint="#FFFFFF"
             android:hint="@string/password"
-            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/btn"
             android:inputType="textPassword" />
